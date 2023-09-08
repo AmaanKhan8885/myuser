@@ -1,0 +1,169 @@
+<button (click)="addition('true')" class="btn btn-primary" type="button">
+  Addition
+</button>
+<!-- <div *ngIf="addittion" class="col-md-4">Addition ksdgksldgjlkdsjg</div> -->
+
+<button (click)="subtraction('true')" class="btn btn-primary m-1" type="button">
+  Subtraction
+</button>
+<!-- <div *ngIf="subttraction" class="col-md-4" >Subtraction jfkalsdkldjklas</div> -->
+
+<button (click)="division('true')" class="btn btn-primary m-1" type="button">
+  Multiplication
+</button>
+<!-- <div *ngIf="multipliication" class="col-md-4">Multiplication ifisfjdjf</div> -->
+
+<button
+  (click)="multiplication('true')"
+  class="btn btn-primary m-1"
+  type="button"
+>
+  Divide
+</button>
+<!-- <div *ngIf="diviision" class="col-md-4">Divide iifeifjdskljf</div> -->
+
+<button (click)="even('true')" class="btn btn-primary m-1" type="button">
+  Even
+</button>
+<!-- <div *ngIf="evenn" class="col-md-4">Even filsdjlfkjdsk</div> -->
+
+<button (click)="even('true')" class="btn btn-primary m-1" type="button">
+  Greater Then
+</button>
+<button (click)="even('true')" class="btn btn-primary m-1" type="button">
+  Smaller Then
+</button>
+<button (click)="even('true')" class="btn btn-primary m-1" type="button">
+  Find Even
+</button>
+<button (click)="even('true')" class="btn btn-primary m-1" type="button">
+  Find Odd
+</button>
+<button (click)="even('true')" class="btn btn-primary m-1" type="button">
+  Find Prime
+</button>
+<button (click)="even('true')" class="btn btn-primary m-1" type="button">
+  Find Composite
+</button>
+
+<div>
+  <div *ngIf="addittion" class="container" style="width: 1000px; padding: 50px">
+    <div class="row flex" style="width: 500px">
+      <div class="col-md-12">
+        <h2>Addition</h2>
+        <input
+          type="number"
+          [(ngModel)]="num1"
+          placeholder="Enter First Number"
+        />
+        <input
+          type="number"
+          [(ngModel)]="num2"
+          placeholder="Enter Second Number"
+        />
+
+        <div>result2</div>
+        <button (click)="sub()" type="button" class="btn btn-success mb-3">
+          Addition
+        </button>
+
+        <h1>Result: {{ result }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="subttraction"
+    class="container"
+    style="width: 1000px; padding: 50px"
+  >
+    <div class="row" style="width: 500px">
+      <div class="col-md-12">
+        <h2>Subtraction</h2>
+        <input
+          type="number"
+          [(ngModel)]="num1"
+          placeholder="Enter First Number"
+        />
+        <input
+          type="number"
+          [(ngModel)]="num2"
+          placeholder="Enter Second Number"
+        />
+
+        <div>result2</div>
+        <button (click)="sub()" type="button" class="btn btn-success mb-3">
+          Subtraction
+        </button>
+
+        <h1>Result: {{ result }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div
+    *ngIf="multipliication"
+    class="container"
+    style="width: 1000px; padding: 50px"
+  >
+    <div class="row" style="width: 500px">
+      <div class="col-md-12">
+        <h2>Multiplication</h2>
+        <input
+          type="number"
+          [(ngModel)]="num1"
+          placeholder="Enter First Number"
+        />
+        <input
+          type="number"
+          [(ngModel)]="num2"
+          placeholder="Enter Second Number"
+        />
+
+        <div>result3</div>
+        <button (click)="sub()" type="button" class="btn btn-success mb-3">
+          Multiplication
+        </button>
+
+        <h1>Result: {{ result }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="diviision" class="container" style="width: 1000px; padding: 50px">
+    <div class="row" style="width: 500px">
+      <div class="col-md-12">
+        <h2>Division</h2>
+        <input
+          type="number"
+          [(ngModel)]="num1"
+          placeholder="Enter First Number"
+        />
+        <input
+          type="number"
+          [(ngModel)]="num2"
+          placeholder="Enter Second Number"
+        />
+
+        <div>result4</div>
+        <button (click)="sub()" type="button" class="btn btn-success mb-3">
+          Division
+        </button>
+
+        <h1>Result: {{ result }}</h1>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="evenn" class="container" style="width: 1000px; padding: 50px">
+    <div class="row" style="width: 500px">
+      <div class="col-md-12">
+        <input type="number" [(ngModel)]="primeNum" />
+        <br /><br />
+        <button (click)="isPrime()">Is Prime?</button>
+        <br /><br />
+        <p>{{ primeResult }}</p>
+      </div>
+    </div>
+  </div>
+</div>
